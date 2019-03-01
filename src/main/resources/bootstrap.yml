@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      name: central-gateway-server
+      discovery:
+        service-id: central-config-server
+        enabled: true
+        
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
