@@ -27,6 +27,6 @@ jobs:
       uses: s4u/maven-settings-action@v2.6.0
       with:
         servers: |
-          [{"id": "github/dishantkamble", "privateKey": "${{ secrets.GITHUB_TOKEN }}"}]
+          [{"id": "github/dishantkamble", "passphrase": "${{ secrets.GITHUB_TOKEN }}"}]
     - name: Build with Maven
       run: mvn -B package --file pom.xml install -Dtoken=$GITHUB_TOKEN
