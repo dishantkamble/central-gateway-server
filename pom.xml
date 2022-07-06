@@ -73,5 +73,9 @@
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+        <repository>
+          <id>github/dishantkamble</id>
+          <url>https://maven.pkg.github.com/dishantkamble/</url>
+        </repository>
     </repositories>
 </project>
