@@ -26,4 +26,4 @@ jobs:
       with:
         servers: '[{"id": "github/dishantkamble", "username": "$GITHUB_ACTOR", "password": "$GITHUB_TOKEN"}]'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml install -Dtoken=$GH_TOKEN
+      run: mvn -B package --file pom.xml install -Dtoken=$GITHUB_TOKEN
