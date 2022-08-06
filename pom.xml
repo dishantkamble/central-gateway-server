@@ -67,6 +67,18 @@
     </plugins>
   </build>
 
+  <repositories>
+    <repository>
+      <id>spring-milestones</id>
+      <name>Spring Milestones</name>
+      <url>https://repo.spring.io/milestone</url>
+    </repository>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
+    </repository>
+  </repositories>
+
   <distributionManagement>
     <repository>
         <id>github</id>
@@ -74,5 +86,4 @@
         <url>https://maven.pkg.github.com/dishantkamble/central-gateway-server</url>
     </repository>
   </distributionManagement>
-
 </project>
