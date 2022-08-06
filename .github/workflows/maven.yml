@@ -1,11 +1,6 @@
-# This workflow will build a Java project with Maven
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -21,11 +16,6 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: '11'
-    - name: Set up Maven Settings for deploy
-      uses: s4u/maven-settings-action@v2.6.0
-      with:
-        servers: |
-          [{"id": "github/dishantkamble", "username": "'${{ secrets.GITHUB_ACTOR }}'", "password": "'${{ secrets.GITHUB_TOKEN }}'"}]
     - name: Build with Maven
       run: mvn -B package -Dregistry=https://maven.pkg.github.com/dishantkamble --file pom.xml install
       env:
