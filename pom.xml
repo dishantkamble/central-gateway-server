@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.dishant</groupId>
         <artifactId>central-java-dependency</artifactId>
-        <version>1.0.18</version>
+        <version>1.0.19</version>
     </parent>
 
     <groupId>com.dishant</groupId>
@@ -76,7 +76,6 @@
         <repository>
           <id>github</id>
           <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
-          <!-- <privateKey>${GITHUB_TOKEN}</privateKey> -->
         </repository>
     </repositories>
 </project>
