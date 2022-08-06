@@ -20,7 +20,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
     - name: Update version in pom.xml (Release only)
-      run: mvn -B versions:set -DnewVersion=${{ steps.bump.outputs.version }} -DgenerateBackupPoms=false -Dtoken=$GH_TOKEN --file pom.xml
+      run: mvn -B versions:set -DnewVersion=${{ steps.bump.outputs.version }} -DgenerateBackupPoms=false -Dregistry=https://maven.pkg.github.com/dishantkamble -Dtoken=$GH_TOKEN --file pom.xml
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
     - name: Publish to GitHub Packages Apache Maven
