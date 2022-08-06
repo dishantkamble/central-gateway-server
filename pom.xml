@@ -67,15 +67,12 @@
     </plugins>
   </build>
 
-  <repositories>
+  <distributionManagement>
     <repository>
-      <id>spring-milestones</id>
-      <name>Spring Milestones</name>
-      <url>https://repo.spring.io/milestone</url>
+        <id>github</id>
+        <name>GitHub Dishant Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/dishantkamble/central-gateway-server</url>
     </repository>
-    <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/dishantkamble/central-gateway-server</url>
-    </repository>
-  </repositories>
+  </distributionManagement>
+
 </project>
