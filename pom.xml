@@ -76,7 +76,7 @@
         <repository>
           <id>github/dishantkamble</id>
           <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
-          <privateKey>${GITHUB_TOKEN}</privateKey>
+          <!-- <privateKey>${GITHUB_TOKEN}</privateKey> -->
         </repository>
     </repositories>
 </project>
