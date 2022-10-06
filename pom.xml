@@ -11,7 +11,7 @@
   <groupId>com.dishant</groupId>
   <artifactId>central-gateway-server</artifactId>
   <!-- [bump] -->
-  <version>1.0.10</version>
+  <version>1.0.11</version>
   <name>central-gateway-server</name>
   <description>Central gateway server</description>
 
